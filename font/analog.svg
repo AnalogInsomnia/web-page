@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2023 by original authors @ fontello.com</metadata>
+<defs>
+<font id="analog" horiz-adv-x="1000" >
+<font-face font-family="analog" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="open" unicode="&#xe801;" d="M874 850c-293-1-649-192-874-511 219-232 498-489 885-489 386 0 665 257 884 489-225 319-580 510-874 511-2 0-5 0-7 0-2 0-4 0-7 0-2 0-4 0-7 0z m20-111c226-1 526-146 732-391-200-203-433-387-741-387-309 0-541 184-742 387 209 248 513 394 740 391 1 0 2 0 3 0 3 0 5 0 8 0z m-279-389l54-54 54-54 54-53 54-54 54-54 54 54 53 54 54 53 54 54 54 54-54 54-54 54-54 54-53 53-54 54-54-54-54-53-54-54-54-54z m108 0l54 54 54 54 54 54 54-54 53-54 54-54-54-54-53-54-54-53-54 53-54 54z m108 0l54-54 54 54-54 54z" horiz-adv-x="1769" />
+
+<glyph glyph-name="close" unicode="&#xe802;" d="M874 850c-293-1-649-192-874-511 219-232 498-489 885-489 386 0 665 257 884 489-225 319-580 510-874 511-2 0-5 0-7 0-2 0-4 0-7 0-2 0-4 0-7 0l0 0z" horiz-adv-x="1769" />
+</font>
+</defs>
+</svg>

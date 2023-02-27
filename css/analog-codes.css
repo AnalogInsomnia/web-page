@@ -1,0 +1,3 @@
+
+.analog-open:before { content: '\e801'; } /* '' */
+.analog-close:before { content: '\e802'; } /* '' */

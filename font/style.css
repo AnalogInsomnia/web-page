@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'digital_insomnia';
+    src: url('../fonts/digital-insomnia-webfont.woff2') format('woff2'),
+         url('../fonts/digital-insomnia-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html{
+	background: linear-gradient(to bottom, #070707 0%, #0f0f0f 100%);
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 1%;
+    width: auto;
+    font-size: 50%;
+    font-family: 'digital_insomnia';
+    color: #666565;
+}
+
+#text {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    font-size: 100%;
+    font-family: 'digital_insomnia';
+    color: #ffffff;
+}
+
+#htext {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    font-size: 100%;
+    font-family: 'digital_insomnia';
+    color: #000000;
+}
