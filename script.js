@@ -1,19 +1,15 @@
 $(document).ready(function() {
-  var $text = $('.AI-Text');
-  var $logo = $('#logocon');
-  var lines = $text.html().split('<br>');
-  var newLines = [];
+  let $text = $('.AI-Text');
+  let $logo = $('#logocon');
+  let lines = $text.html().split('<br>');
+  let newLines = lines.map(line => {
+    const letters = line.split('');
+    const newLetters = letters.map(letter => `<span>${letter}</span>`);
+    return newLetters.join('');
+  });
+  $text.html(newLines.join('<br>'));
   
-  for (var i = 0; i < lines.length; i++) {
-    var letters = lines[i].split('');
-    var newLetters = [];
-    for (var j = 0; j < letters.length; j++) {
-    newLetters.push('<span>' + letters[j] + '</span>');
-   }
-    newLines.push(newLetters.join(''));
-  }
-  
-  var $analog = $('.analog-open');
+  let $analog = $('.analog-open');
 
   function toggleClass() {
     $analog.toggleClass('analog-open analog-close');
@@ -29,13 +25,13 @@ $(document).ready(function() {
 
   $text.html(newLines.join('<br>'));
   
-  var $letters = $text.find('span');
+  let $letters = $text.find('span');
   
   function flicker() {
     $letters.each(function() {
-      var random = Math.random();
-      var currentColor = $(this).css('color');
-      var textShadow = (currentColor === 'rgb(240, 248, 255)') ? '0 0 20px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff, 0 0 80px #fff, 0 0 900px #fff' : '0 0 20px #3d233f, 0 0 40px #3d233f, 0 0 50px #3d233f, 0 0 60px #3d233f, 0 0 70px #3d233f, 0 0 80px #3d233f, 0 0 900px #3d233f';
+      let random = Math.random();
+      let currentColor = $(this).css('color');
+      let textShadow = (currentColor === 'rgb(240, 248, 255)') ? '0 0 20px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff, 0 0 80px #fff, 0 0 900px #fff' : '0 0 20px #3d233f, 0 0 40px #3d233f, 0 0 50px #3d233f, 0 0 60px #3d233f, 0 0 70px #3d233f, 0 0 80px #3d233f, 0 0 900px #3d233f';
       if (random > .0098 ) {
         $(this).css({
           'color': 'aliceblue',
@@ -50,9 +46,9 @@ $(document).ready(function() {
     })
   
    $logo.each(function() {
-      var random = Math.random();
-      var currentColor = $(this).css('color');
-      var textShadow = (currentColor === 'rgb(240, 248, 255)') ? '0 0 20px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff, 0 0 80px #fff, 0 0 900px #fff' : '0 0 20px #3d233f, 0 0 40px #3d233f, 0 0 50px #3d233f, 0 0 60px #3d233f, 0 0 70px #3d233f, 0 0 80px #3d233f, 0 0 900px #3d233f';
+      let random = Math.random();
+      let currentColor = $(this).css('color');
+      let textShadow = (currentColor === 'rgb(240, 248, 255)') ? '0 0 20px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff, 0 0 80px #fff, 0 0 900px #fff' : '0 0 20px #3d233f, 0 0 40px #3d233f, 0 0 50px #3d233f, 0 0 60px #3d233f, 0 0 70px #3d233f, 0 0 80px #3d233f, 0 0 900px #3d233f';
       if (random > .009) {
         $(this).css({
           'color': 'aliceblue',
